@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background-color: #d27373;
+  color: #fff;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo h1 {
+  margin-left: 2rem;
+  font-style: italic;
+  margin: 0;
+}
+
+nav {
+  margin-right: 20px;
+}
+
+.menu-links {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  font-size: 20px;
+}
+
+.menu-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.3s linear;
+  font-weight: 500;
+}
+
+.menu-links a:hover {
+  color: #011201;
+  transform: translateY(-15px);
+}
+.menu-links a:active {
+  color: orange;
+}
+
+#about {
+  background-color: #94a0a2;
+  padding: 50px 0;
+}
+
+.about-intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-pic {
+  width: 200px;
+  border-radius: 30%;
+  border: 3px solid #4caf50;
+}
+
+.about-text h2 {
+  color: #d71717;
+  font-size: 50px;
+  text-align: center;
+}
+
+.about-text h3 {
+  font-weight: normal;
+  margin-bottom: 15px;
+  font-size: 40px;
+  margin-left: 20px;
+}
+
+.about-text p {
+  margin-bottom: 50px;
+  font-size: 17px;
+}
+
+.btn {
+  background-color: #4c57af;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+  margin-left: 30rem;
+}
+
+.btn:hover {
+  background-color: #45a049;
+  color: #011201;
+  font-size: 20px;
+}
+.skills {
+  margin: 50px 0px 0px 80px;
+  font-size: 20px;
+}
+
+.skills ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+  color: rgb(18, 20, 2);
+}
+
+.skills li {
+  margin-bottom: 5px;
+}
+
+#work {
+  margin-top: 300px;
+  padding: 50px 0;
+}
+.container h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: sans-serif;
+  font-size: 45px;
+  margin-top: 50px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 10px;
+  flex: 1 1 300px;
+  padding: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.project-card h3 {
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+.project-card a {
+  color: #333;
+  text-decoration: underline;
+  font-weight: 800;
+  margin-left: 80px;
+}
+
+.project-card a:hover {
+  color: #4caf50;
+}
+
+#services {
+  background-color: #6a4141;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 400px 100px 400px 300px;
+  border-radius: 20px;
+  color: azure;
+}
+
+#services ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: #000;
+}
+
+#services li {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+#contact {
+  padding: 50px 0;
+  background-color: #dfcc7d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 100vh;
+}
+#contact .container {
+  margin-top: 50px;
+  width: 350px;
+  height: 450px;
+  background-color: #08401d;
+}
+
+#contact address {
+  font-style: normal;
+  color: #c10b87;
+  margin-left: 50px;
+  font-size: 20px;
+}
+#contact address a {
+  color: coral;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  position: sticky;
+  bottom: 0;
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  header .logo h1 {
+    margin-bottom: 0px;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .menu-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 0px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .menu-links li {
+    margin: 0;
+  }
+
+  .menu-links a {
+    display: block;
+    padding: 0px 0;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .menu-links a:hover {
+    transform: translateY(-2px);
+  }
+}
+@media (max-width: 768px) {
+  #about {
+    padding: 30px 15px;
+  }
+
+  .about-intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 150px;
+    margin-bottom: 15px;
+  }
+
+  .about-text h2 {
+    font-size: 32px;
+  }
+
+  .about-text h3 {
+    font-size: 22px;
+    margin-left: 0;
+  }
+
+  .about-text p {
+    font-size: 16px;
+  }
+
+  .btn {
+    margin: 20px auto 0; /* center button */
+    display: inline-block;
+  }
+}
+@media (max-width: 768px) {
+  #about {
+    padding: 30px 15px;
+  }
+
+  .about-intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 150px;
+    margin-bottom: 15px;
+  }
+
+  .about-text h2 {
+    font-size: 32px;
+  }
+
+  .about-text h3 {
+    font-size: 22px;
+    margin-left: 0;
+  }
+
+  .about-text p {
+    font-size: 16px;
+  }
+
+  .btn {
+    margin: 20px auto 0; /* center button */
+    display: inline-block;
+  }
+}
+@media (max-width: 768px) {
+  .skills {
+    margin: 30px 15px;
+    font-size: 18px;
+  }
+
+  .skills ul {
+    padding-left: 15px;
+  }
+}
+@media (max-width: 768px) {
+  #work {
+    margin-top: 80px;
+    padding: 30px 15px;
+  }
+
+  .container h2 {
+    font-size: 32px;
+  }
+
+  .projects {
+    flex-direction: column;
+  }
+
+  .project-card a {
+    margin-left: 0;
+    display: block;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  #services {
+    margin: 60px 15px;
+    padding: 30px 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #services li {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  #contact {
+    padding: 30px 15px;
+  }
+
+  #contact .container {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  #contact address {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
